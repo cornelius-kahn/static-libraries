@@ -2,7 +2,7 @@
  * Start Bootstrap - SB Admin 2 v3.3.7+1 (http://startbootstrap.com/template-overviews/sb-admin-2)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
-  * Modify By Cornelius
+ * Modify By Cornelius
  */
 .chat,.timeline {
     list-style:none
@@ -382,36 +382,38 @@ table.dataTable thead .sorting:after {
 }
 @media(max-width:767px) {
     ul.timeline:before {
-    left:40px
+        left:40px
+    }
+    ul.timeline>li>.timeline-panel {
+        width:calc(10%);
+        width:-moz-calc(10%);
+        width:-webkit-calc(10%);
+        float:right
+    }
+    ul.timeline>li>.timeline-badge {
+        top:16px;
+        left:15px;
+        margin-left:0
+    }
+    ul.timeline>li>.timeline-panel:before {
+        right:auto;
+        left:-15px;
+        border-right-width:15px;
+        border-left-width:0
+    }
+    ul.timeline>li>.timeline-panel:after {
+        right:auto;
+        left:-14px;
+        border-right-width:14px;
+        border-left-width:0
+    }
 }
-ul.timeline>li>.timeline-panel {
-    width:calc(10%);
-    width:-moz-calc(10%);
-    width:-webkit-calc(10%);
-    float:right
-}
-ul.timeline>li>.timeline-badge {
-    top:16px;
-    left:15px;
-    margin-left:0
-}
-ul.timeline>li>.timeline-panel:before {
-    right:auto;
-    left:-15px;
-    border-right-width:15px;
-    border-left-width:0
-}
-ul.timeline>li>.timeline-panel:after {
-    right:auto;
-    left:-14px;
-    border-right-width:14px;
-    border-left-width:0
-}
-}@media(min-width:768px) {
+@media(min-width:768px) {
     .copyright {
-    margin-left:250px
+        margin-left:250px
+    }
 }
-}.copyright {
+.copyright {
     margin-bottom:0;
     border-radius:0;
     border-right:0
